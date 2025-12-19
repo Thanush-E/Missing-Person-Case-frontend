@@ -6,7 +6,7 @@ export default function Login({ onLogin, onSwitch }) {
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post('http://localhost:5000/api/login', form);
+      const res = await axios.post('https://missing-person-case-backend-1.onrender.com/api/login', form);
       onLogin(res.data);
     } catch {
       alert("Invalid email or password.");
